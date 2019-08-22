@@ -1,0 +1,47 @@
+// General Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  // font-size: calc(10px + 0.25vw);
+  @media @desktop4k {
+    font-size: calc(10px + 0.3334vw);
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: @main-font-color;
+  min-width: 300px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Nunito', sans-serif;
+  color: @header-font-color;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;  
+}
+

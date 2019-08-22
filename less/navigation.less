@@ -1,0 +1,52 @@
+// Navigation code here
+header {
+  width: 100%;
+  height: @headerheight;
+  @media @desktop4k {
+    height: calc(@headerheight + 3.5vw);
+  }
+  background-color: @nav-bg-color;
+  border: 1px solid @nav-border-color;
+
+  nav {
+    min-width: 300px;
+    @media @phone {
+      width: 415px;
+    }
+    @media @tablet {
+      width: fit-content;
+    }
+    @media @desktop {
+      width: 41vw;
+    }
+    @media @desktop4k {
+      width: 55vw;
+    }
+    margin: 0 auto;
+
+    display: grid;
+    .grid(1fr 1fr, 1fr, 0, 0);
+    text-align: center;
+    
+    div:first-child {
+      padding: 1.2em;
+      @media @phone {
+        padding: 1em;
+      }
+    }
+    div:last-child {
+      height: fit-content;
+      .grid(1fr, 1fr 1fr 1fr 1fr 1fr, 0, 0);
+
+      a {
+        line-height: 1.5;
+        font-size: 1.6rem;
+        padding: 5px;
+        text-decoration: none;
+        color: @nav-font-color;
+        text-align: center;
+        vertical-align: center;
+      }
+    }
+  }
+}
