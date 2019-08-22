@@ -35,6 +35,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 ```
 
-## Prototype Wireframe
+## Wireframe
 
 [FluidUI Prototype Wireframe](https://www.fluidui.com/editor/live/preview/cF9Xc1Q5b2FDU2NNYWMxdXJxbU9URW53SFRMNHg0TWJNaw==)
