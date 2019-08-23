@@ -35,6 +35,20 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 ```
 
-## Prototype Wireframe
+## Iconography
+
+### Organization
+
+- https://fontawesome.com/icons/users?style=solid
+
+### User
+
+- https://fontawesome.com/icons/user-tie?style=solid
+
+### Sign In
+
+- https://fontawesome.com/icons/sign-in-alt?style=solid
+
+## Wireframe
 
 [FluidUI Prototype Wireframe](https://www.fluidui.com/editor/live/preview/cF9Xc1Q5b2FDU2NNYWMxdXJxbU9URW53SFRMNHg0TWJNaw==)
