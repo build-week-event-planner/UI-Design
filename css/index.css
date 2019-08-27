@@ -248,8 +248,22 @@ header nav div:first-child {
 header nav div a {
   line-height: 1.5;
   margin: auto 0;
-  color: #DAE3E5;
+}
+header nav div a:link {
+  color: #A1C6EA;
   text-decoration: none;
+}
+header nav div a:visited {
+  color: #BBD1EA;
+  text-decoration: none;
+}
+header nav div a:hover {
+  color: #507DBC;
+  text-decoration: underline;
+}
+header nav div a:active {
+  color: #247BA0;
+  text-decoration: underline;
 }
 @media (max-width: 500px) {
   header nav div a {
@@ -276,7 +290,7 @@ header nav div a.Title {
   font-style: italic;
   text-align: center;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
   header nav div a.Title {
     text-align: left;
   }

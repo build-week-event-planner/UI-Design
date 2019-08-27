@@ -52,8 +52,22 @@ header {
         line-height: 1.5;
         // font-size: 1.6rem;
         margin: auto 0;
-        color: @nav-font-color;
-        text-decoration: none;
+        &:link {
+          color: @nav-link-color;
+          text-decoration: none;
+        }
+        &:visited {
+          color: @nav-visited-color;
+          text-decoration: none;
+        }
+        &:hover {
+          color: @nav-hover-color;
+          text-decoration: underline;
+        }
+        &:active {
+          color: @nav-active-color;
+          text-decoration: underline;
+        }
         @media @phone {
           padding: 5px;
         }
@@ -72,7 +86,7 @@ header {
         font-weight: bold;
         font-style: italic;
         text-align: center;
-        @media @desktop4k {
+        @media @desktop {
           text-align: left;
         }
       }
