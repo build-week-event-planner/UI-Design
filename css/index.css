@@ -409,7 +409,7 @@ header nav div a.SignIn {
 }
 @media (max-width: 500px) {
   .home {
-    padding: 0 0;
+    padding: 0 1vw;
     min-width: calc(100vw / 2);
     max-width: 100vw;
   }
