@@ -7,10 +7,13 @@
 
   <title>COPE: COrporate Planner for Events</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Nunito%7COpen+Sans%7CRoboto%7CMontserrat&display=swap" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%7COpen+Sans%7CRoboto%7CMontserrat&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
   <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -40,43 +43,64 @@
         <span>The COrporate Planner for Events (COPE) is here to help you schedule your corporate events, coordinating all the details to make sure everything needed is accomplished.</span>
       </p>
     </section>
-
-    <!-- <section class="intro-images">
-        <img src="img/1.png" class="intro1" alt="">
-        <img src="img/2.png" class="intro2" alt="">
-        <img src="img/3.png" class="intro3" alt="">
-    </section> -->
    
     <section class="visit-places">
       <h3>Features &amp; Benefits</h3>
-      
-      <p>
-        <ul>
-          <li>Create & Share Event Summaries</li>
-          <li>Communicate with Vendors</li>
-          <li>Collaborate with Team</li>
-        </ul>
-      </p>
+
+      <ul>
+        <li>Create & Share Event Summaries</li>
+        <li>Communicate with Vendors</li>
+        <li>Collaborate with Team</li>
+      </ul>
     </section>
     
-    <section class="walk">
-      <div class="walk-text">
-        <h3>Let's Go For A Walk</h3>
-        
-        <p>
-          <span>Maiores quasi aperiam omnis laboriosam, ex doloribus magnam, adipisci, reiciendis laudantium, illo at aspernatur molestiae non rerum! Autem rerum magnam facilis officiis, amet cupiditate vero, enim minus explicabo veritatis nobis.</span>
-        </p>
+    <section class="container">
+      <h2>Samples of our Results</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
 
-        <div class="btn">
-          Sign Up
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/samples/01.jpg" alt="Sample 01" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/samples/02.jpg" alt="Sample 02" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/samples/03.jpg" alt="Sample 03" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/samples/04.jpg" alt="Sample 04" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/samples/05.jpg" alt="Sample 05" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/samples/06.jpg" alt="Sample 06" style="width:100%;">
+          </div>
         </div>
-      </div>
-      
-      <!-- <div class="walk-img">
-        <img src="img/walk.png" alt="">
-      </div> -->
-    </section>
 
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    
   </div>
 
   <!-- <footer>

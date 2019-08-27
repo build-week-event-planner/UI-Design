@@ -486,6 +486,9 @@ header nav div a.SignIn {
 .home .visit-places p {
   margin-top: 13px;
 }
+.home .visit-places ul {
+  list-style: disc inside;
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #DAE3E5;
