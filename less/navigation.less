@@ -14,7 +14,7 @@ header {
     text-align: center;
 
     @media @phone {
-      .grid(1fr 1fr, 1fr, 0, 0);
+      .grid(1.5fr 1fr, 1fr, 0, 0);
       // 2 rows, 1 columns
     }
     @media @tablet {
@@ -27,21 +27,21 @@ header {
     }
     div:last-child {
       @media @phone {
-        .grid(1fr 1fr 1fr, 1fr, 0, 0);
-        // 3 rows, 1 columns
+        .grid(1fr 1fr, 1fr, 0, 0);
+        // 2 rows, 1 columns
         padding-bottom: 15px;
       }
       @media @tablet {
-        .grid(1fr 1fr 1fr, 1fr, 0, 0);
-        // 3 rows, 1 columns
+        .grid(1fr 1fr  1fr, 0, 0);
+        // 2 rows, 1 columns
       }
       @media @desktop {
-        .grid(1fr, 1.5fr 1fr 1fr, 0, 0);
-        // 1 rows, 3 columns
+        .grid(1fr, 1.5fr 1fr, 0, 0);
+        // 1 rows, 2 columns
       }
       @media @desktop4k {
-        .grid(1fr, 2.5fr 1fr 1fr, 0, 0);
-        // 1 rows, 3 columns
+        .grid(1fr, 2.5fr 1fr, 0, 0);
+        // 1 rows, 2 columns
       }
     }
 
@@ -91,7 +91,7 @@ header {
         }
       }
       
-      a.Organization {
+      a.About {
         text-align: right;
         grid-row-start: 1;
         grid-row-end: 1;
@@ -99,80 +99,80 @@ header {
         grid-column-end: 1;
 
         @media @phone {
-          // 3 rows, 1 columns
+          // 2 rows, 1 columns
           text-align: center;
         }
         @media @tablet {
-          // 3 rows, 1 columns
+          // 2 rows, 1 columns
         text-align: right;
         }
       }
       
-      a.User {
-        @media @phone {
-          text-align: center;
-          // 3 rows, 1 columns
-          grid-row-start: 2;
-          grid-row-end: 2;
-          grid-column-start: 1;
-          grid-column-end: 1;
-        }
-        @media @tablet {
-          text-align: right;
-          // 3 rows, 1 columns
-          grid-row-start: 2;
-          grid-row-end: 2;
-          grid-column-start: 1;
-          grid-column-end: 1;
-        }
-        @media @desktop {
-          text-align: center;
-          // 1 rows, 3 columns
-          grid-row-start: 1;
-          grid-row-end: 1;
-          grid-column-start: 2;
-          grid-column-end: 2;
-        }
-        @media @desktop4k {
-          text-align: center;
-          // 1 rows, 3 columns
-          grid-row-start: 1;
-          grid-row-end: 1;
-          grid-column-start: 2;
-          grid-column-end: 2;
-        }
-      }
+      // a.User {
+      //   @media @phone {
+      //     text-align: center;
+      //     // 2 rows, 1 columns
+      //     grid-row-start: 2;
+      //     grid-row-end: 2;
+      //     grid-column-start: 1;
+      //     grid-column-end: 1;
+      //   }
+      //   @media @tablet {
+      //     text-align: right;
+      //     // 2 rows, 1 columns
+      //     grid-row-start: 2;
+      //     grid-row-end: 2;
+      //     grid-column-start: 1;
+      //     grid-column-end: 1;
+      //   }
+      //   @media @desktop {
+      //     text-align: center;
+      //     // 1 rows, 2 columns
+      //     grid-row-start: 1;
+      //     grid-row-end: 1;
+      //     grid-column-start: 2;
+      //     grid-column-end: 2;
+      //   }
+      //   @media @desktop4k {
+      //     text-align: center;
+      //     // 1 rows, 2 columns
+      //     grid-row-start: 1;
+      //     grid-row-end: 1;
+      //     grid-column-start: 2;
+      //     grid-column-end: 2;
+      //   }
+      // }
       
       a.SignIn {
         text-align: right;
         @media @phone {
           text-align: center;
-          // 3 rows, 1 columns
-          grid-row-start: 3;
-          grid-row-end: 3;
+          // 2 rows, 1 columns
+          grid-row-start: 2;
+          grid-row-end: 2;
           grid-column-start: 1;
           grid-column-end: 1;
         }
         @media @tablet {
-          // 3 rows, 1 columns
-          grid-row-start: 3;
-          grid-row-end: 3;
+          // 2 rows, 1 columns
+          grid-row-start: 2;
+          grid-row-end: 2;
           grid-column-start: 1;
           grid-column-end: 1;
         }
         @media @desktop {
-          // 1 rows, 3 columns
+          // 1 rows, 2 columns
           grid-row-start: 1;
           grid-row-end: 1;
-          grid-column-start: 3;
-          grid-column-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 2;
         }
         @media @desktop4k {
-          // 1 rows, 3 columns
+          // 1 rows, 2 columns
           grid-row-start: 1;
           grid-row-end: 1;
-          grid-column-start: 3;
-          grid-column-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 2;
         }
       }
     }
