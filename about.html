@@ -25,13 +25,14 @@
     $(document).ready(function() {
       if( ! $('#myCanvas').tagcanvas({
         textColour : '#1D3461',
-        outlineThickness : 1,
+        outlineColour : '#507DBC',
+        outlineThickness : 0.5,
         maxSpeed : 0.025,
         initial : [-0.360, -0.360],
         reverse : true,
         dragControl : false,
         imageMode : "both",
-        imagePosition : top,
+        imagePosition : "top",
         imagePadding : 2,
         depth : 0.75,
         wheelZoom : false
@@ -40,14 +41,6 @@
         $('#myCanvasContainer').hide();
       }
     });
-    window.onload = function() {
-      try {
-        TagCanvas.Start('myCanvas');
-      } catch(e) {
-        // something went wrong, hide the canvas container
-        document.getElementById('myCanvasContainer').style.display = 'none';
-      }
-    };
   </script>
 </head>
 
