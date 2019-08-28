@@ -79,25 +79,42 @@ header {
       a {
         line-height: 1.5;
         margin: auto 0;
+        text-decoration: none;
+
+        transition: all .33s ease-in-out;
+
         &:link {
           color: @nav-link-color;
-          text-decoration: none;
-          transition: all .33s ease-in-out;
         }
         &:visited {
           color: @nav-visited-color;
-          text-decoration: none;
-          transition: all .33s ease-in-out;
         }
         &:hover {
           color: @nav-hover-color;
-          text-decoration: underline;
-          transition: all .33s ease-in-out;
+
+          // text-decoration: none;
+          // padding-bottom: 2px;
+          // margin-bottom: 10px;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(
+              to left, 
+              transparent 0%,
+              @dark-cerulean 25%,
+              @space-cadet 50%,
+              @lapis-lazuli 75%,
+              transparent 100%
+            );
+          }
         }
         &:active {
           color: @nav-active-color;
-          text-decoration: underline;
-          transition: all .33s ease-in-out;
         }
         @media @phone {
           padding: 5px;

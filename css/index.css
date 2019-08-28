@@ -295,26 +295,29 @@ header nav div:first-child {
 header nav div a {
   line-height: 1.5;
   margin: auto 0;
+  text-decoration: none;
+  transition: all 0.33s ease-in-out;
 }
 header nav div a:link {
   color: #A1C6EA;
-  text-decoration: none;
-  transition: all 0.33s ease-in-out;
 }
 header nav div a:visited {
   color: #507DBC;
-  text-decoration: none;
-  transition: all 0.33s ease-in-out;
 }
 header nav div a:hover {
   color: #DAE3E5;
-  text-decoration: underline;
-  transition: all 0.33s ease-in-out;
+  position: relative;
+}
+header nav div a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to left, transparent 0%, #1F487E 25%, #1D3461 50%, #247BA0 75%, transparent 100%);
 }
 header nav div a:active {
   color: #BBD1EA;
-  text-decoration: underline;
-  transition: all 0.33s ease-in-out;
 }
 @media (max-width: 500px) {
   header nav div a {
@@ -527,7 +530,6 @@ header nav div a.SignIn {
   bottom: 2px;
   left: 0;
   height: 3px;
-  background: #1D3461;
   background: linear-gradient(to left, transparent 0%, #1F487E 25%, #1D3461 50%, #247BA0 75%, transparent 100%);
 }
 .home h1::after {
@@ -656,44 +658,44 @@ header nav div a.SignIn {
 }
 @media (max-width: 500px) {
   .home h3.team-members::after {
-    width: calc(340px + 0.25vw);
+    width: calc(220px + 0.25vw);
     max-width: 300px;
   }
 }
 @media (min-width: 501px) {
   .home h3.team-members::after {
-    width: calc(325px + 7vw);
+    width: calc(210px + 7vw);
   }
 }
 @media (min-width: 1000px) {
   .home h3.team-members::after {
-    width: calc(330px + 7vw);
+    width: calc(200px + 7vw);
   }
 }
 @media (min-width: 1400px) {
   .home h3.team-members::after {
-    width: calc(340px + 9vw);
+    width: calc(200px + 8vw);
   }
 }
 @media (max-width: 500px) {
   .home h3.skills-technology::after {
-    width: calc(340px + 0.25vw);
+    width: calc(285px + 0.25vw);
     max-width: 300px;
   }
 }
 @media (min-width: 501px) {
   .home h3.skills-technology::after {
-    width: calc(325px + 7vw);
+    width: calc(300px + 7vw);
   }
 }
 @media (min-width: 1000px) {
   .home h3.skills-technology::after {
-    width: calc(330px + 7vw);
+    width: calc(300px + 7vw);
   }
 }
 @media (min-width: 1400px) {
   .home h3.skills-technology::after {
-    width: calc(340px + 9vw);
+    width: calc(310px + 9vw);
   }
 }
 .home .developers iframe {
