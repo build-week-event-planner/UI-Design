@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>COPE: COrporate Planner for Events</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%7COpen+Sans%7CRoboto%7CMontserrat&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="./js/jquery.tagcanvas.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      if( ! $('#myCanvas').tagcanvas({
+        textColour : '#1D3461',
+        outlineThickness : 1,
+        maxSpeed : 0.025,
+        initial : [-0.360, -0.360],
+        reverse : true,
+        dragControl : false,
+        imageMode : both,
+        imagePosition : top,
+        imagePadding : 2,
+        depth : 0.75,
+        wheelZoom : false
+      })) {
+        // TagCanvas failed to load
+        $('#myCanvasContainer').hide();
+      }
+    });
+    window.onload = function() {
+      try {
+        TagCanvas.Start('myCanvas');
+      } catch(e) {
+        // something went wrong, hide the canvas container
+        document.getElementById('myCanvasContainer').style.display = 'none';
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div>
+        <a class="Title" href="index.html">
+          <span class="title">COrporate&nbsp;Planner for&nbsp;Events<span class="desktop-only"> - </span><br class="not-desktop"/></span><span class="subtitle">helping&nbsp;you&nbsp;COPE</span>
+        </a>
+      </div>
+      <div>
+        <a class="About" href="about.html">About&nbsp;Us&nbsp;<i class="fas fa-users"></i></a>
+        <a class="SignIn" href="#">Sign&nbsp;In&nbsp;<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-container home">
+    <div class="intro">
+      <section>
+        <h2 class="about">About</h2>
+        
+        <p>
+          <span>The team of software engineers who built this application is featured below.</span>
+        </p>
+      </section>
+      
+      <div class="intro-flex">
+        <section class="developers intro-item">
+          <h3 class="team-members">Team Members</h3>
+          
+          <div class="github-card" data-user="PaulMEdwards" data-width="100%" data-height="" data-theme="default" data-target="blank">
+            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+          </div><br/>
+          <div class="github-card" data-user="lizdoyle" data-width="100%" data-height="" data-theme="default" data-target="blank">
+            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+          </div><br/>
+          <div class="github-card" data-user="meholt" data-width="100%" data-height="" data-theme="default" data-target="blank">
+            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+          </div><br/>
+        </section>
+      
+        <section class="skills intro-item">
+          <h3 class="skills-technology">Skills & Technology</h3>
+
+          <div id="myCanvasContainer">
+            <canvas width="300" height="300" id="myCanvas" style="width: 100%;">
+              <p>Your browser does not support the canvas element. Please upgrade to view this content.</p>
+              <ul>
+                <!-- <li><a href="https://git-scm.com" target="_blank"><img src="./img/git.png" width="50px" height="50px">Git</a></li> -->
+                <li><a href="https://git-scm.com" target="_blank">Git</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">Responsive Design</a></li>
+                <li><a href="#">UI/UX</a></li>
+                <li><a href="#"></a>React</li>
+                <li><a href="#"></a>Bootstrap</li>
+                <li><a href="#"></a>jQuery</li>
+                <li><a href="#"></a>JavaScript</li>
+                <li><a href="#"></a>Google Fonts</li>
+                <li><a href="#"></a>FontAwesome</li>
+                <li><a href="#"></a>Favicon.io</li>
+              </ul>
+            </canvas>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

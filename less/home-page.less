@@ -27,6 +27,7 @@
       width: 100%;
       border-radius: 5px;
     }
+    width: 100%;
   }
 
   .intro-flex {
@@ -43,6 +44,9 @@
     }
 
     .intro-item {
+      @media @phone {
+        width: 99%;
+      }
       @media @tablet {
         width: 100%;
       }
@@ -57,7 +61,7 @@
     .features {
       ul {
         list-style: disc inside;
-        line-height: 2em;
+        line-height: 2.2em;
         li {
           font-size: 1.3em;
         }
@@ -69,6 +73,7 @@
     position: relative;
     padding-bottom: 2px;
     text-decoration: none;
+    margin-bottom: 10px;
   }
   h1::after,h2::after,h3::after {
     content: "";
@@ -151,7 +156,7 @@
     }
 
     #myCarousel {
-      padding: 15px 0;
+      // padding: 15px 0;
       max-width: 99%;
     }
     .carousel-indicators {
@@ -163,6 +168,85 @@
     }
     .carousel-control-prev,.carousel-control-next {
       width: 10%;
+    }
+  }
+  
+  h2.about::after {
+    @media @phone {
+      width: calc(105px + 0.25vw);
+      max-width: 300px;
+    }
+    @media @tablet {
+      width: calc(110px + 2vw);
+    }
+    @media @desktop {
+      width: calc(95px + 3vw);
+    }
+    @media @desktop4k {
+      width: calc(75px + 5vw);
+    }
+  }
+  h3.team-members::after {
+    @media @phone {
+      width: calc(340px + 0.25vw);
+      max-width: 300px;
+    }
+    @media @tablet {
+      width: calc(325px + 7vw);
+    }
+    @media @desktop {
+      width: calc(330px + 7vw);
+    }
+    @media @desktop4k {
+      width: calc(340px + 9vw);
+    }
+  }
+  h3.skills-technology::after {
+    @media @phone {
+      width: calc(340px + 0.25vw);
+      max-width: 300px;
+    }
+    @media @tablet {
+      width: calc(325px + 7vw);
+    }
+    @media @desktop {
+      width: calc(330px + 7vw);
+    }
+    @media @desktop4k {
+      width: calc(340px + 9vw);
+    }
+  }
+
+  .developers {
+    iframe {
+      min-width: 293px;
+      max-width: 100%;
+    }
+  }
+
+  #myCanvasContainer {
+    a {
+      font-size: 1.5em;
+      &:link {
+        color: @nav-link-color;
+        text-decoration: none;
+        transition: all .33s ease-in-out;
+      }
+      &:visited {
+        color: @nav-visited-color;
+        text-decoration: none;
+        transition: all .33s ease-in-out;
+      }
+      &:hover {
+        color: @nav-hover-color;
+        text-decoration: underline;
+        transition: all .33s ease-in-out;
+      }
+      &:active {
+        color: @nav-active-color;
+        text-decoration: underline;
+        transition: all .33s ease-in-out;
+      }
     }
   }
 }// home
