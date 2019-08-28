@@ -14,12 +14,12 @@ header {
     text-align: center;
 
     @media @phone {
-      .grid(1.5fr 1fr, 1fr, 0, 0);
       // 2 rows, 1 columns
+      .grid(1.25fr 1fr, 1fr, 0, 0);
     }
     @media @tablet {
-      .grid(1fr, 1.25fr 0.75fr, 0, 0);
       // 1 rows, 2 columns
+      .grid(1.5fr, 1fr 0.75fr, 0, 0);
     }
 
     div:first-child {
@@ -27,21 +27,21 @@ header {
     }
     div:last-child {
       @media @phone {
-        .grid(1fr 1fr, 1fr, 0, 0);
         // 2 rows, 1 columns
+        .grid(1fr 1fr, 1fr, 0, 0);
         padding-bottom: 15px;
       }
       @media @tablet {
-        .grid(1fr 1fr  1fr, 0, 0);
         // 2 rows, 1 columns
+        .grid(1fr 1fr, 1fr, 0, 0);
       }
       @media @desktop {
-        .grid(1fr, 1.5fr 1fr, 0, 0);
         // 1 rows, 2 columns
+        .grid(1fr, 2fr 1fr, 0, 0);
       }
       @media @desktop4k {
-        .grid(1fr, 2.5fr 1fr, 0, 0);
         // 1 rows, 2 columns
+        .grid(1fr, 2.5fr 1fr, 0, 0);
       }
     }
 
@@ -107,41 +107,6 @@ header {
         text-align: right;
         }
       }
-      
-      // a.User {
-      //   @media @phone {
-      //     text-align: center;
-      //     // 2 rows, 1 columns
-      //     grid-row-start: 2;
-      //     grid-row-end: 2;
-      //     grid-column-start: 1;
-      //     grid-column-end: 1;
-      //   }
-      //   @media @tablet {
-      //     text-align: right;
-      //     // 2 rows, 1 columns
-      //     grid-row-start: 2;
-      //     grid-row-end: 2;
-      //     grid-column-start: 1;
-      //     grid-column-end: 1;
-      //   }
-      //   @media @desktop {
-      //     text-align: center;
-      //     // 1 rows, 2 columns
-      //     grid-row-start: 1;
-      //     grid-row-end: 1;
-      //     grid-column-start: 2;
-      //     grid-column-end: 2;
-      //   }
-      //   @media @desktop4k {
-      //     text-align: center;
-      //     // 1 rows, 2 columns
-      //     grid-row-start: 1;
-      //     grid-row-end: 1;
-      //     grid-column-start: 2;
-      //     grid-column-end: 2;
-      //   }
-      // }
       
       a.SignIn {
         text-align: right;
