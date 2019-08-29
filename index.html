@@ -73,7 +73,7 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="img/samples/01.jpg" alt="Sample 01" style="width:100%;">
           </div>
           <div class="carousel-item">
@@ -101,6 +101,16 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+
+      <script type="text/javascript">
+        let images = document.querySelector('div.carousel-inner');
+        let r = 0;
+        for (let i = images.children.length; i >= 0; i--) {
+          r = Math.random() * i | 0;
+          images.appendChild(images.children[r]);
+        }
+        images.children[0].classList.add('active');
+      </script>
     </section>
   </div>
 </body>

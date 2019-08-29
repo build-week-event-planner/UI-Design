@@ -73,15 +73,24 @@
         <section class="developers intro-item">
           <h3 class="team-members">Team Members</h3>
           
-          <div class="github-card" data-user="PaulMEdwards" data-width="100%" data-height="" data-theme="default" data-target="blank">
-            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-          </div><br/>
-          <div class="github-card" data-user="lizdoyle" data-width="100%" data-height="" data-theme="default" data-target="blank">
-            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-          </div><br/>
-          <div class="github-card" data-user="meholt" data-width="100%" data-height="" data-theme="default" data-target="blank">
-            <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-          </div><br/>
+          <div class="github-cards">
+            <div class="github-card" data-user="PaulMEdwards" data-width="100%" data-height="" data-theme="default" data-target="blank">
+              <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+            </div>
+            <div class="github-card" data-user="lizdoyle" data-width="100%" data-height="" data-theme="default" data-target="blank">
+              <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+            </div>
+            <div class="github-card" data-user="meholt" data-width="100%" data-height="" data-theme="default" data-target="blank">
+              <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+            </div>
+          </div>
+
+          <script type="text/javascript">
+            let g = document.querySelector('div .github-cards');
+            for (let i = g.children.length; i >= 0; i--) {
+                g.appendChild(g.children[Math.random() * i | 0]);
+            }
+          </script>
         </section>
       
         <section class="skills intro-item">
@@ -106,6 +115,14 @@
                 <li><a href="https://fontawesome.com"><img src="./img/icons/fontawesome.png" width="50px" height="50px">FontAwesome</a></li>
                 <li><a href="https://favicon.io"><img src="./img/icons/favicon.ico" width="50px" height="50px"></i>Favicon.io</a></li>
               </ul>
+
+              <script type="text/javascript">
+                let ul = document.querySelector('ul');
+                for (let i = ul.children.length; i >= 0; i--) {
+                    ul.appendChild(ul.children[Math.random() * i | 0]);
+                }
+              </script>
+            </section>
             </canvas>
           </div>
         </section>
